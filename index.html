@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walimatussafar Haji Ahmad Samsuriadi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="hero">
+            <h2>Undangan</h2>
+            <h1 class="kufam"">Walimatussafar Haji</h1>
+            <p>Kepada Yth.</p>
+            <p id="to-recipient" class="bold"></p>
+        </section>
+        <section class="section"></section>
+        <section class="section">
+            <p>Bismillahirrahmanirrahim</p>
+            <h3 class="kufam">Assalamualaikum Warahmatullahi Wabarakatuh</h3>
+        </section>
+        <section class="section">
+            <p>Dengan memohon Ridho Allah SWT, kami bermaksud menyelenggarakan</p>
+            <h2 class="kufam">Tasyakuran Walimatussafar Haji</h2>
+        </section>
+        <section class="section">
+            <h3 class="bold">Drs. H. Ahmad Samsuriadi, M.Si.</h3>
+            <h3 class="bold">Hj. Nurul Husnawati, S.T., M.Ak.</h3>
+            <h3 class="bold">Ahmad Balda Dinata, A.Md.T.</h3>
+            <h3 class="bold">Nadia Shafa Salsabila, S.Ked.</h3>
+        </section>
+        <section class="section">
+            <div class="card">
+                <p>Insya Allah akan dilaksanakan pada:</p>
+                <h3>Kamis, 24 April 2025</h3>
+                <h3>Pukul 10:00 - 13:00 WITA</h3>
+                <h3>Di BTN Bogak No. 36 Praya, Lombok Tengah</h3>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d492.24148125877394!2d116.28652359669718!3d-8.705481421538172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNDInMTkuNiJTIDExNsKwMTcnMTIuNSJF!5e0!3m2!1sen!2sid!4v1744556669007!5m2!1sen!2sid"
+                width="720" height="480" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="section">
+            <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami.</p>
+            <p>Apabila Bapak/Ibu/Saudara/i dapat hadir di acara ini, kami ucapkan terima kasih.</p>
+        </section>
+        <section class="section">
+            <h3 class="kufam">Wassalamualaikum Warahmatullahi Wabarakatuh</h3>
+        </section>
+        <footer class="section">
+            <div class="card">
+                <img src="assets/Image-20250413-215310.jpeg" alt="Keluarga Ahmad Samsuriadi"
+                    class="img-card">
+                <p>Hormat kami:</p>
+                <p class="bold">H. Ahmad Samsuriadi sekeluarga</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const recipientName = "Bapak/Ibu/Saudara/i Penerima";
+        document.getElementById('to-recipient').innerText = recipientName;
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlRecipientName = urlParams.get('kepada');
+        if (urlRecipientName) {
+            document.getElementById('to-recipient').innerText = urlRecipientName;
+        }
+    </script>
+</body>
+
+</html>

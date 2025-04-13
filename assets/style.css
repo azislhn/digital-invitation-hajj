@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.5rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.kufam {
+  font-family: 'Kufam', sans-serif;
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 768px;
+  margin: auto;
+}
+
+.hero {
+  background: url('Image-20250409-195327.jpeg') no-repeat center center fixed;
+  background-size: 768px auto;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  background-position: 50% 100%;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero * {
+  position: relative;
+  z-index: 2;
+}
+
+.section {
+  width: 100%;
+  background-color: #ffdab9;
+  text-align: center;
+  padding: 20px;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-card {
+  width: 100%;
+  max-width: 720px;
+  height: 480px;
+  object-position: 100% 25%;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
