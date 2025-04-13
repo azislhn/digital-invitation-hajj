@@ -6,13 +6,13 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: clamp(12px, 2vw, 16px);
   background-color: #fff;
   color: #333;
 }
 
 p {
-  font-size: 1rem;
+  font-size: clamp(12px, 1.1vw, 16px);
   font-weight: 500;
   margin: 0.5rem;
 }
@@ -25,15 +25,15 @@ h3 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: clamp(20px, 5vw, 36px);
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: clamp(18px, 4vw, 28px);
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: clamp(16px, 3vw, 22px);
 }
 
 .kufam {
