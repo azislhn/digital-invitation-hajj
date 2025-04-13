@@ -54,7 +54,7 @@ h3 {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  width: 768px;
+  /* width: 768px; */
   margin: auto;
 }
 
@@ -107,7 +107,8 @@ h3 {
   background-color: #fff;
   border-radius: 20px;
   padding: 20px;
-  margin: 20px 0;
+  margin: 20px auto;
+  max-width: 768px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
