@@ -59,8 +59,8 @@ h3 {
 }
 
 .hero {
-  background: url('Image-20250409-195327.jpeg') no-repeat center center fixed;
-  background-size: 768px auto;
+  background: url('Image-20250409-195327.jpeg') no-repeat center center;
+  background-size: cover;
   width: 100%;
   height: 100vh;
   color: white;
@@ -71,7 +71,7 @@ h3 {
   text-align: center;
   padding: 20px;
   position: relative;
-  background-position: 50% 100%;
+  background-position: 50% 80%;
 }
 
 .hero::before {
